@@ -136,17 +136,56 @@ header {
     border-radius: 50px;
     width: 27rem;
     column-gap: 0.4rem;
+    position: relative;
 
     button {
       background-color: #7c93c3;
       border-radius: 5px;
       padding: 0.5rem 1rem;
       font-size: 1rem;
+      cursor: pointer;
     }
 
     input {
       color: #101010;
       font-size: 1rem;
+    }
+
+    .results{
+      position: absolute;
+      max-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      top: 100%;
+      left: 0%;
+      overflow: scroll;
+      border-radius: 0;
+      width: 27rem;
+      background-color: transparent;
+      row-gap: 1rem;
+
+      .recommendation{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+        h1,p{
+          color: black;
+          padding: 1rem 2rem;
+        }
+
+        img{
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+          object-position: center;
+
+        }
+      }
     }
   }
 }
@@ -188,6 +227,120 @@ header {
       font-size: 1.1rem;
       padding: 0.8rem 1.2rem;
       border-radius: 10px;
+    }
+  }
+}
+
+#about{
+  max-width: 100%;
+  height: 100vh;
+  padding: 9rem 9rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  row-gap: 2rem;
+
+
+  h1{font-size: 4rem;width: 20%;}
+
+  p{
+    width: 80%;
+    display: block;
+    background-color: rgba($color: #0d132a, $alpha: 0.6);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+  }
+  
+  .team{
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 3rem;
+    
+    .worker_collection{
+      display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    width: 50rem;
+    max-height: 100%;
+
+      .worker_card{
+        background-color: rgba($color: #0d132a, $alpha: 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        row-gap: 1rem;
+        border-radius: 5px;
+
+        h1{
+          font-size: 1rem;
+        }
+
+        p{
+          background-color: transparent;
+          width: 80%;
+          padding: 0;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 9rem 9rem 0;
+  height: 100vh;
+  row-gap: 4rem;
+
+  h1{
+    font-size: 4rem;
+  }
+
+  form{
+    align-self: flex-end;
+    background-color: rgba($color: #1e2a5e, $alpha: 0.3);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-size: 1.3rem;
+    width: 30rem;
+    border-radius: 10px;
+    
+    input{
+      padding: 0.2rem 0.3rem;
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      width: 97%;
+      color: white;
+      text-indent: 0.3rem;
+    }
+    
+    textarea{
+      background-color: transparent;
+      color: white;
+      padding: 0.3rem;
+
+    }
+
+    button{
+      background-color: #7c93c3;
+      padding: 0.3rem 0.6rem;
+      width: fit-content;
+      align-self: center;
+      margin-top: 1rem;
+      border-radius: 5px;
     }
   }
 }

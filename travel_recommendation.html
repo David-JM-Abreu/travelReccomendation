@@ -22,10 +22,11 @@
         </nav>
 
         <div>
-            <input type="text" name="search" id="search_input" placeholder="Enter a destination or keyword">
+            <input oninput type="text" name="search" id="search_input" placeholder="Enter a destination or keyword">
             <img src="assets/images/search.png" alt="search">
             <button onclick="search()">Search</button>
-            <button onclick="clear()">Clear</button>
+            <button onclick="clearSearch()">Clear</button>
+            <div class="results"></div>
         </div>
     </header>
 
@@ -39,6 +40,45 @@
 
             <button>BOOK NOW</button>
         </div>
+    </div>
+
+    <div id="about">
+        <h1>ABOUT US</h1>
+        <p>Welcome to FlyDiscounts!, We are a team os passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.
+        Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customer first</strong> and <strong>working together</strong> to achieve our goals.
+    Feel free to explore our website to learn more about what we offer!</p>
+
+    <div class="team">
+        <h1>Our
+            Team</h1>
+        <div class="worker_collection">
+            <div class="worker_card">
+                <h1>John Doe</h1>
+                <p>John is responsible for...</p>
+            </div>
+            <div class="worker_card">
+                <h1>Celina Thomas</h1>
+                <p>Celina Thomas is responsible for...</p>
+            </div>
+            <div class="worker_card">
+                <h1>Mike Tysen</h1>
+                <p>Mike Tysen is responsible for...</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="contact">
+        <h1>CONTACT US</h1>
+        <form action="#contact">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit">Send message</button>
+        </form>
     </div>
 
     <div class="socials">
