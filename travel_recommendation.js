@@ -7,7 +7,7 @@ window.onload =
 // Get recommendation list
 function fetchRecommendations() {
   // Fetch the JSON file from the assets folder
-  fetch('/assets/travel_recommendation_api.json')
+  fetch('/travelReccomendation/assets/travel_recommendation_api.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok ' + response.statusText);
